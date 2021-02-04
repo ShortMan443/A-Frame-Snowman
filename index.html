@@ -12,31 +12,35 @@
 -->
 
 <head>
-	<title>VR Snow Man</title>
-	<script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    <title>VR SnowMan</title>
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
 
 </head>
 
 <body>
-	<a-scene>
-        
-        <a-plane position="0 -1.5 0" rotation="-90 0 0" width="4" height="4" color="#7BC8A4">
+    <a-scene>
+
+        <a-plane position="-5 -1.5 -5" rotation="-90 180 0" width="10" height="10" scale="1 1 1" color="green">
             <a-sphere position="0 0 1.1" radius="1.25" color="#ffffff">
                 <a-sphere position="0 0 1.75" radius="0.9" color="#ffffff">
                     <a-sphere position="0 0 1.2" radius="0.6" color="#ffffff">
-                        <a-cone  color="orange" radius-bottom="0.1" height="0.5" position="0 0.7 0" rotation="0 0 0"></a-cone>
-                        <a-cylinder side="double" color="black" radius="0.1" segments-radial="60" height="0.89" position="-0.25 0.15 0.03" ></a-cylinder>
-                        <a-cylinder side="double" color="black" radius="0.1" segments-radial="60" height="0.89" position="0.25 0.15 0.03" ></a-cylinder>
-                        <a-cylinder side="double" color="black" radius="0.5" segments-radial="60" height="1.2" rotation="90 0 0" position="0 0 0.8">
-                            <a-circle side="double" color="black" radius="1" segments-radial="60" height="0.01" rotation="90 0 0" position="0 -0.4 0"></a-circle> 
+                        <a-cone color="orange" radius-bottom="0.1" height="0.5" position="0 0.7 -0.1" rotation="0 0 0">
+                        </a-cone>
+                        <a-cylinder side="double" color="black" radius="0.1" segments-radial="60" height="0.89"
+                            position="-0.25 0.15 0.03"></a-cylinder>
+                        <a-cylinder side="double" color="black" radius="0.1" segments-radial="60" height="0.89"
+                            position="0.25 0.15 0.03"></a-cylinder>
+                        <a-cylinder side="double" color="black" radius="0.5" segments-radial="60" height="1.2"
+                            rotation="90 0 0" position="0 0 0.8">
+                            <a-circle side="double" color="black" radius="1" segments-radial="60" height="0.01"
+                                rotation="90 0 0" position="0 -0.4 0"></a-circle>
                         </a-cylinder>
                     </a-sphere>
                 </a-sphere>
             </a-sphere>
-
         </a-plane>
-        <a-sky color="#ECECEC"></a-sky>
-	</a-scene>
+        <a-sky color="grey"></a-sky>
+    </a-scene>
 </body>
 
 </html>
